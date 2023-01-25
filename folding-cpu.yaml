@@ -90,6 +90,8 @@ spec:
             # - "/etc/fahclient-config/config.xml"
             # - "/var/lib/fahclient/config.xml"
           securityContext:
+            runAsUser: 999
+            runAsGroup: 1999
             runAsNonRoot: true
             readOnlyRootFilesystem: true
             allowPrivilegeEscalation: false
